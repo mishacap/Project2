@@ -182,5 +182,3 @@ class TestPetApi:
         pet_id = 92233720368547758077
         response = pet_api.delete_pet(pet_id=pet_id, expected_error=True)
         check.status_code(404, response)
-
-
