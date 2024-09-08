@@ -1,0 +1,10 @@
+[32mINFO    [0m testing:base_request.py:36 Method: POST
+[32mINFO    [0m testing:base_request.py:37 URL: https://petstore.swagger.io/v2/pet
+[32mINFO    [0m testing:base_request.py:38 Request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '156', 'Content-Type': 'application/json'}
+[32mINFO    [0m testing:base_request.py:39 Response headers: {'Date': 'Sun, 08 Sep 2024 15:30:05 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+[32mINFO    [0m testing:base_request.py:40 Response: {'id': 44, 'category': {'id': 0, 'name': 'string'}, 'name': 'blkuupim', 'photoUrls': ['string'], 'tags': [{'id': 0, 'name': 'string'}], 'status': 'pending'}
+[32mINFO    [0m testing:base_request.py:36 Method: GET
+[32mINFO    [0m testing:base_request.py:37 URL: https://petstore.swagger.io/v2/pet/44
+[32mINFO    [0m testing:base_request.py:38 Request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}
+[32mINFO    [0m testing:base_request.py:39 Response headers: {'Date': 'Sun, 08 Sep 2024 15:30:05 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'}
+[32mINFO    [0m testing:base_request.py:40 Response: {'id': 44, 'category': {'id': 0, 'name': 'string'}, 'name': 'blkuupim', 'photoUrls': ['string'], 'tags': [{'id': 0, 'name': 'string'}], 'status': 'pending'}
