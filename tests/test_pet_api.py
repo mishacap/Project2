@@ -143,7 +143,7 @@ class TestPetApi:
     @allure.title('Проверка обновления карточки питомца по ID')
     def test_update_pet_by_id(self, logger_test):
         pet_api = PetApi(logger=logger_test)
-        choose_id = 9223372036854775807
+        choose_id = 1 #9223372036854775807
         new_name = common.generate_random_text_value()
         new_status = random.choice(['available', 'sold', 'pending'])
         body = f"name={new_name}&status={new_status}"
