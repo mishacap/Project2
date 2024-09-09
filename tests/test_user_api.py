@@ -28,7 +28,7 @@ class TestUserApi:
                 "userStatus": 0}
         response = user_api.post_user(body=body)
         check.status_code(200, response)
-        new_user_id = 9223372036854770397  # новый пользователь всегда создается с этим id
+        new_user_id = 9223372036854766034 # новый пользователь всегда создается с этим id
         body['id'] = new_user_id
         get_response = user_api.get_user_by_username('ivan_test')
         check.status_code(200, get_response)
