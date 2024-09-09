@@ -143,7 +143,7 @@ class TestPetApi:
     @allure.title('Проверка обновления карточки питомца по ID')
     def test_update_pet_by_id(self, logger_test):
         pet_api = PetApi(logger=logger_test)
-        choose_id = 9223372036854775807
+        choose_id = 9223372036854751000 #9223372036854775807
         new_name = common.generate_random_text_value()
         new_status = random.choice(['available', 'sold', 'pending'])
         body = f"name={new_name}&status={new_status}"
@@ -170,7 +170,7 @@ class TestPetApi:
     @allure.title('Проверка удаления карточки питомца')
     def test_delete_pet(self, logger_test):
         pet_api = PetApi(logger=logger_test)
-        pet_id = 9223372036854775807
+        pet_id = 9223372036854751000
         response = pet_api.delete_pet(pet_id=pet_id, expected_error=True)
         check.status_code(200, response)
         response = pet_api.get_pet_find_by_id(pet_id, expected_error=True)
